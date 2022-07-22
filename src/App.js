@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { BearCard } from './Components/BearCard';
+import { BearInfo } from './Components/BearInfo';
 
-function App() {
+const App = () => {
+
+  const [bear, setBear] = useState([])
+
+  useEffect(() => {
+    axios.get('https://api.punkapi.com/v2/beers')
+      .then(response => setBear(response.data))
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route  path="/" element={<BearCard bear={bear} />}/>
+        <Route  path="/:id" element={<BearInfo />}/>
+      </Routes>
+    </Router>
   );
 }
 
