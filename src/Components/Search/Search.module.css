@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.input {
+  padding-left: 10px;
+  opacity: .7;
+  border: 1px solid #223132;
+  border-radius: 5px;
+  outline: none;
+  background: #cccccc7b;
+  color: #212020;
+  height: 40px;
+  width: 500px;
+  box-shadow: 10px 5px 5px black;
+}
+.input:hover {
+  opacity: 1;
+}
+.input:focus {
+  opacity: 1;
+}
