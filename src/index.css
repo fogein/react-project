@@ -6,6 +6,9 @@
 h3{
   margin: 0;
 }
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+  background-color:#fc5a5a !important;
+}
 body {
   margin: 0;
   padding: 0;

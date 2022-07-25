@@ -25,7 +25,7 @@
 .cardDeskription {
   border-top: 2px solid #fc5a5a;
   width: 800px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -43,7 +43,7 @@
 .descriptionTitle{
   font-size: 20px;
   color: rgb(177, 19, 19);
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
 }
 .abv{
   color: rgb(177, 19, 19);
