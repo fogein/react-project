@@ -19,11 +19,13 @@ export const BeerInfo = () => {
           oneBeer.map((data) => {
             return <div className={cls.cardContainer} key={data.id}>
               <img className={cls.image} src={data.image_url} alt="" />
-              <h3>{data.name}</h3>
+              <h3 className={cls.name} >{data.name}</h3>
+              <span className={cls.tagline} >{data.tagline}</span>
+              <span className={cls.abv} >Alcohol strength:{data.abv}%</span>
               <div className={cls.cardDeskription}>
-                <span>{data.tagline}</span>
+                <h3 className={cls.descriptionTitle}>Description</h3>
                 <span>{data.description}</span>
-                <span>{data.abv}</span>
+                <h3 className={cls.descriptionTitle}>Food pairing</h3>
                 <span>{data.food_pairing}</span>
               </div>
             </div>
