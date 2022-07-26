@@ -12,7 +12,7 @@ export const BeerInfo = () => {
   }, [id]);
   return (
     <>
-      <Link className={cls.button} to={`/`}>&#8592;</Link>
+      <Link className={cls.button} to={`/home`}>&#8592;</Link>
       <div className={cls.container}>
 
         {
