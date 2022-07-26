@@ -29,7 +29,7 @@ export const BeerCard = () => {
       <div className={cls.cardContainer}>
         {
           beer.map((data) => {
-            return <Link className={cls.bearCard} key={data.id} to={`../home/${data.id}`} >
+            return <Link className={cls.bearCard} key={data.id} to={`../${data.id}`} >
               <img className={cls.bearImg} src={data.image_url ? data.image_url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52qoTpUSBUBXjGmvUnaHGaPog4LTm6hJwAg&usqp=CAU'} alt="Bear" />
               <span className={cls.name} >{data.name}</span>
               <span className={cls.description} >

@@ -6,11 +6,11 @@ import { Header } from './Components/Header/Header';
 export function MainRouter() {
 
   return (
-    <HashRouter basename='/home'>
+    <HashRouter>
       <Header/>
       <Routes>
-        <Route path="/home" element={<BeerCard />} />
-        <Route path="/home/:id" element={<BeerInfo />} />
+        <Route path="/" element={<BeerCard />} />
+        <Route path="/:id" element={<BeerInfo />} />
       </Routes>
     </HashRouter>
   );

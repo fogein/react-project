@@ -1,6 +1,5 @@
 {
   "name": "react-proj",
-  "homepage": "https://fogein.github.io/react-project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
