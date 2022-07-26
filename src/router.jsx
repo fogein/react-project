@@ -6,7 +6,7 @@ import { Header } from './Components/Header/Header';
 export function MainRouter() {
 
   return (
-    <HashRouter>
+    <HashRouter basename='/'>
       <Header/>
       <Routes>
         <Route path="/" element={<BeerCard />} />
